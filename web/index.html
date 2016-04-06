@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cadatro de usuários</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="interface">
+           
+                <h1>Cadastro de Usuários</h1>
+                
+                <h2><a href="view/listaUsuario.jsp">Lista Usuários</a></h2>
+                
+                
+                    <form action="ControllerCallOfTaxi" method="get"> 
+                     <input type="text" name="nome" id="nome" title="Digite seu nome completo" placeholder="Digite seu Nome" required tabindex="1" >
+                     <br>
+                        <input type="email" name="email" id="email" title="Digite seu e-mail" placeholder="Digite seu E-mail" required tabindex="2" >
+                        <br>
+                            <input type="text" name="login" id="login" title="Digite seu Login" placeholder="Login" required tabindex="3" >
+                            <br>
+                                <input type="password" name="senha" id="senha" title="Digite sua Senha" placeholder="Digite a Senha" required tabindex="4">
+                    
+                                <input type="password" name="confSenha" id="confSenha" title="Confirme sua senha" placeholder="Confirme sua Senha" required tabindex="5">
+                                <br>
+                                    <input type="number" name="dddCelular" id="dddCelular" title="Digite o ddd do seu Celular" placeholder="DDD" required tabindex="6" min="11" max="99">
+                                    <br>
+                                         <input type="tel" name="celular" id="celular" title="Digite o seu nº de Celular" placeholder="Celular" required tabindex="7" min="11111111" max="999999999">
+                                         <br>
+                                                <input type="number" name="dddTelefone" id="dddTelefone" title="Digite o ddd do seu Telefone" placeholder="DDD" tabindex="8" min="11" max="99">
+                                                <br>
+                                                    <input type="tel" name="Telefone" id="Telefone" title="Digite o seu nº de Telefone" placeholder="Telefone" tabindex="9" min="111111111" max="999999999"> 
+                                                    <br>
+                
+                        <input type="text" name="estado" id="estado" tabindex="10" placeholder="Estado">
+                        <datalist id="listaEstado" list="estado">
+                            <option>Distrito Federal</option>
+                            <option>Amanozas</option>
+                            <option>São Paulo</option>
+                        </datalist>
+                        
+                        <input type="text" name="cidade" id="cidade" tabindex="11" placeholder="Cidade">
+                            <datalist id="listaCidade" list="cidade">
+                                <option>Brasília</option>
+                                <option>Rio de Janeiro</option>
+                            </datalist>
+                            <br>
+                            <input type="text" name="bairro" id="bairro" tabindex="12" placeholder="Bairro">
+                            <datalist id="listaBairro" list="bairro">
+                                <option>Candangolandia</option>
+                                <option>bandeirante</option>
+                            </datalist>
+                            <br>
+                            <input type="text" name="logradouro" id="logradouro" tabindex="13" placeholder="Logradouro">
+                            <datalist id="listalogradouro" list="logradouro">
+                                <option>Quadra 1</option>
+                                <option>Quadra 2</option>
+                            </datalist>
+                            <br>
+                            <input type="text" name="complemento" id="complemento" title="Digite o complemento do seu endereço" placeholder="Complemento" required tabindex="14">
+                        <button id="enviar" type="submit" name="enviar">Enviar</button>
+                    </form>
+                    
+            
+            
+            
+        </div>
+    </body>
+</html>
